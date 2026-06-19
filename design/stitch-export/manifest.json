@@ -1,0 +1,140 @@
+{
+  "project": {
+    "title": "VeriCore Global Marketing Site",
+    "id": "13378518173535726539",
+    "url": "https://stitch.withgoogle.com/projects/13378518173535726539"
+  },
+  "sourceMonolith": "design-code-stitch.md",
+  "screens": [
+    {
+      "slug": "category-brick-factory",
+      "title": "category-brick-factory.png",
+      "stitchScreenId": "16604876534547767861",
+      "localHtml": "design/stitch-export/screens/category-brick-factory.html"
+    },
+    {
+      "slug": "category-tile-line",
+      "title": "category-tile-line.png",
+      "stitchScreenId": "16604876534547768251",
+      "localHtml": "design/stitch-export/screens/category-tile-line.html"
+    },
+    {
+      "slug": "hero-concrete-plant",
+      "title": "hero-concrete-plant.png",
+      "stitchScreenId": "16604876534547768641",
+      "localHtml": "design/stitch-export/screens/hero-concrete-plant.html"
+    },
+    {
+      "slug": "logistics-container",
+      "title": "logistics-container.png",
+      "stitchScreenId": "16604876534547769421",
+      "localHtml": "design/stitch-export/screens/logistics-container.html"
+    },
+    {
+      "slug": "installation-engineers",
+      "title": "installation-engineers.png",
+      "stitchScreenId": "16604876534547769031",
+      "localHtml": "design/stitch-export/screens/installation-engineers.html"
+    },
+    {
+      "slug": "katalog-beton-zavodlari",
+      "title": "Katalog: Beton zavodlari",
+      "stitchScreenId": "423f53ddd41041438f84019f4adc65e4",
+      "localHtml": null,
+      "notes": "Not in design-code-stitch.md. Run pnpm stitch:pull-remote after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "asosiy-sahifa",
+      "title": "Asosiy sahifa",
+      "stitchScreenId": "c66e7fef3f61477f8ecaf2e15ceb89e6",
+      "localHtml": null,
+      "notes": "Not in monolith; pull remotely or paste a new export into design-code-stitch.md and re-run stitch:sync-local."
+    },
+    {
+      "slug": "hzs35-mahsulot",
+      "title": "HZS35 Mahsulot sahifasi",
+      "stitchScreenId": "c2b03a6eab8f4b7ba3fb466aeabe122c",
+      "localHtml": null,
+      "notes": "Not in monolith; may overlap hero-concrete-plant in Stitch — verify in editor."
+    },
+    {
+      "slug": "qanday-ishlaymiz",
+      "title": "Qanday ishlaymiz?",
+      "stitchScreenId": "7f9de13c3848432697787104d56ccb28",
+      "localHtml": null,
+      "notes": "Not in monolith; pull remotely."
+    },
+    {
+      "slug": "boglanish",
+      "title": "Bog'lanish",
+      "stitchScreenId": "7ae0e776c5f64fa3bec60afd35738931",
+      "localHtml": null,
+      "notes": "Not in monolith; pull remotely."
+    },
+    {
+      "slug": "biz-haqimizda",
+      "title": "Biz haqimizda",
+      "stitchScreenId": "0b452b638c5e42038b90d116f49e81de",
+      "remotePrefix": "design/stitch-export/remote/marketing",
+      "notes": "pnpm stitch:pull-marketing after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "loyiha-toshkent-beton-markazi",
+      "title": "Loyiha tafsilotlari: Toshkent Beton Markazi",
+      "stitchScreenId": "7b8d5535eec54e23a753fa3905d6db7e",
+      "remotePrefix": "design/stitch-export/remote/marketing",
+      "notes": "pnpm stitch:pull-marketing"
+    },
+    {
+      "slug": "loyihalarimiz-mobile",
+      "title": "Loyihalarimiz (Mobile)",
+      "stitchScreenId": "7b91e68b7e494634aba7abc454029285",
+      "remotePrefix": "design/stitch-export/remote/marketing",
+      "notes": "pnpm stitch:pull-marketing"
+    },
+    {
+      "slug": "design-system",
+      "title": "Design System",
+      "stitchScreenId": "asset-stub-assets-c6f6d7f8f03b41b388a08fd4a8b66037-1777482351449",
+      "localHtml": null,
+      "notes": "Design-system stub in Stitch; tokens mirrored in shared/styles/globals.css."
+    }
+  ],
+  "desktopScreens": [
+    {
+      "slug": "asosiy-sahifa-desktop",
+      "title": "Asosiy sahifa (Desktop)",
+      "stitchScreenId": "37f03eed9f234a8c865c8ed5aad0123d",
+      "remotePrefix": "design/stitch-export/remote/desktop",
+      "notes": "pnpm stitch:pull-desktop after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "qanday-ishlaymiz-desktop",
+      "title": "Qanday ishlaymiz? (Desktop)",
+      "stitchScreenId": "2908f024b527454fa871bed90fbce2db",
+      "remotePrefix": "design/stitch-export/remote/desktop",
+      "notes": "pnpm stitch:pull-desktop after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "hzs35-mahsulot-desktop",
+      "title": "HZS35 Mahsulot sahifasi (Desktop)",
+      "stitchScreenId": "ab8d3bf6fab04468bebf4eebda650d74",
+      "remotePrefix": "design/stitch-export/remote/desktop",
+      "notes": "pnpm stitch:pull-desktop after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "boglanish-desktop",
+      "title": "Bog'lanish (Desktop)",
+      "stitchScreenId": "97327193100f4eedbf382b4dbe47091c",
+      "remotePrefix": "design/stitch-export/remote/desktop",
+      "notes": "pnpm stitch:pull-desktop after STITCH_API_KEY is set."
+    },
+    {
+      "slug": "katalog-beton-desktop",
+      "title": "Katalog: Beton zavodlari (Desktop)",
+      "stitchScreenId": "6739134b6ab04ce9aa5357846f6fc1a4",
+      "remotePrefix": "design/stitch-export/remote/desktop",
+      "notes": "pnpm stitch:pull-desktop after STITCH_API_KEY is set."
+    }
+  ]
+}

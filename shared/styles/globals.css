@@ -1,0 +1,197 @@
+@import "@fontsource-variable/manrope/index.css";
+@import "@fontsource-variable/inter/index.css";
+@import "@fontsource-variable/space-grotesk/index.css";
+
+@import "tailwindcss";
+
+@theme {
+  /* === MATERIAL 3 SEMANTIC TOKENS (mirrored from design-code-stitch.md) === */
+  --color-primary: #006875;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0fbfd4;
+  --color-on-primary-container: #004952;
+  --color-primary-fixed: #9af0ff;
+  --color-primary-fixed-dim: #44d8ee;
+  --color-on-primary-fixed: #001f24;
+  --color-on-primary-fixed-variant: #004f58;
+
+  --color-secondary: #835400;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffad2e;
+  --color-on-secondary-container: #6c4400;
+  --color-secondary-fixed: #ffddb5;
+  --color-secondary-fixed-dim: #ffb957;
+  --color-on-secondary-fixed: #2a1800;
+  --color-on-secondary-fixed-variant: #643f00;
+
+  --color-tertiary: #006e2d;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #46c567;
+  --color-on-tertiary-container: #004d1e;
+  --color-tertiary-fixed: #7ffc97;
+  --color-tertiary-fixed-dim: #62df7d;
+  --color-on-tertiary-fixed: #002109;
+  --color-on-tertiary-fixed-variant: #005320;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-background: #f9f9ff;
+  --color-on-background: #141c2a;
+  --color-surface: #f9f9ff;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-dim: #d2daee;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface-container: #e8eeff;
+  --color-surface-container-high: #e1e8fc;
+  --color-surface-container-highest: #dbe2f7;
+  --color-surface-variant: #dbe2f7;
+  --color-surface-tint: #006875;
+  --color-on-surface: #141c2a;
+  --color-on-surface-variant: #3c494b;
+  --color-inverse-surface: #293040;
+  --color-inverse-on-surface: #ecf0ff;
+  --color-inverse-primary: #44d8ee;
+
+  --color-outline: #6c797c;
+  --color-outline-variant: #bbc9cc;
+
+  /* Semantic brand aliases */
+  --color-ink-dark: #0a1220;
+  --color-trust-green: #16a34a;
+
+  /* === FONTS (Fontsource variable fonts imported at top of this file) === */
+  --font-headline: var(--vc-font-headline), "Manrope", system-ui, sans-serif;
+  --font-display: var(--vc-font-headline), "Manrope", system-ui, sans-serif;
+  --font-body: var(--vc-font-body), "Inter", system-ui, sans-serif;
+  --font-label: var(--vc-font-label), "Space Grotesk", system-ui, sans-serif;
+
+  /* === RADIUS === */
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* === SHADOWS (from Stitch HTML) === */
+  --shadow-soft: 0 12px 32px rgba(10, 18, 32, 0.06);
+  --shadow-soft-sm: 0 12px 32px rgba(10, 18, 32, 0.04);
+  --shadow-bottom-nav: 0 -8px 24px rgba(10, 18, 32, 0.08);
+}
+
+/* Dark mode token overrides — class strategy */
+@variant dark (&:where(.dark, .dark *));
+
+/* Home — How we work mobile Swiper */
+.hww-swiper {
+  --swiper-theme-color: var(--color-primary-container);
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-bottom: 0;
+}
+
+.hww-swiper .swiper-pagination-bullet {
+  background: var(--color-outline-variant);
+  opacity: 1;
+}
+
+.hww-swiper .swiper-pagination-bullet-active {
+  background: var(--color-primary-container);
+  width: 1.5rem;
+  border-radius: 9999px;
+}
+
+.dark {
+  --color-primary: #44d8ee;
+  --color-on-primary: #003640;
+  --color-primary-container: #004f58;
+  --color-on-primary-container: #9af0ff;
+
+  --color-secondary: #ffb957;
+  --color-on-secondary: #462a00;
+  --color-secondary-container: #643f00;
+  --color-on-secondary-container: #ffddb5;
+
+  --color-background: #0a1220;
+  --color-on-background: #e1e8fc;
+  --color-surface: #0a1220;
+  --color-surface-container-lowest: #050912;
+  --color-surface-container-low: #11192a;
+  --color-surface-container: #16203a;
+  --color-surface-container-high: #1d2848;
+  --color-surface-container-highest: #243057;
+  --color-on-surface: #e1e8fc;
+  --color-on-surface-variant: #bbc9cc;
+  --color-outline: #8593a0;
+  --color-outline-variant: #3c494b;
+}
+
+/* === BASE LAYER === */
+@layer base {
+  :root {
+    --vc-font-headline: "Manrope Variable", Manrope, ui-sans-serif, system-ui, sans-serif;
+    --vc-font-body: "Inter Variable", Inter, ui-sans-serif, system-ui, sans-serif;
+    --vc-font-label:
+      "Space Grotesk Variable", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-outline-variant);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+  }
+
+  /* Scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar,
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar,
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .glass-nav {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}

@@ -1,0 +1,333 @@
+<!-- category-brick-factory.png -->
+<!DOCTYPE html>
+
+<html lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#44d8ee",
+                        "inverse-surface": "#293040",
+                        "error": "#ba1a1a",
+                        "surface": "#f9f9ff",
+                        "on-secondary-fixed": "#2a1800",
+                        "primary": "#006875",
+                        "on-error-container": "#93000a",
+                        "outline": "#6c797c",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#9af0ff",
+                        "on-tertiary-container": "#004d1e",
+                        "tertiary-fixed-dim": "#62df7d",
+                        "on-tertiary-fixed": "#002109",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "surface-container": "#e8eeff",
+                        "on-tertiary-fixed-variant": "#005320",
+                        "primary-fixed-dim": "#44d8ee",
+                        "secondary-container": "#ffad2e",
+                        "surface-container-high": "#e1e8fc",
+                        "on-secondary-container": "#6c4400",
+                        "surface-tint": "#006875",
+                        "secondary": "#835400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#004952",
+                        "on-primary-fixed": "#001f24",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#141c2a",
+                        "tertiary-container": "#46c567",
+                        "surface-bright": "#f9f9ff",
+                        "primary-container": "#0fbfd4",
+                        "secondary-fixed": "#ffddb5",
+                        "on-background": "#141c2a",
+                        "background": "#f9f9ff",
+                        "surface-container-highest": "#dbe2f7",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#006e2d",
+                        "tertiary-fixed": "#7ffc97",
+                        "surface-variant": "#dbe2f7",
+                        "surface-container-low": "#f1f3ff",
+                        "on-surface-variant": "#3c494b",
+                        "secondary-fixed-dim": "#ffb957",
+                        "surface-dim": "#d2daee",
+                        "on-primary-fixed-variant": "#004f58",
+                        "inverse-on-surface": "#ecf0ff",
+                        "outline-variant": "#bbc9cc",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 max-w-7xl mx-auto bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface text-2xl">menu</span>
+<h1 class="text-2xl font-extrabold text-cyan-500 dark:text-cyan-400 font-headline tracking-tight">VeriCore Global</h1>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-manrope font-bold text-slate-600 dark:text-slate-400">UZ/EN</span>
+</div>
+</header>
+<main class="pt-20 pb-24">
+<!-- Breadcrumb -->
+<nav class="px-6 py-4 overflow-x-auto no-scrollbar whitespace-nowrap">
+<ol class="flex items-center text-sm font-medium text-on-surface-variant gap-2">
+<li class="flex items-center">
+<a class="hover:text-primary transition-colors" href="#">Bosh sahifa</a>
+<span class="material-symbols-outlined text-base ml-2">chevron_right</span>
+</li>
+<li class="flex items-center">
+<a class="hover:text-primary transition-colors" href="#">Katalog</a>
+<span class="material-symbols-outlined text-base ml-2">chevron_right</span>
+</li>
+<li class="text-primary font-bold">Beton zavodlari</li>
+</ol>
+</nav>
+<!-- Category Hero -->
+<section class="px-6 mb-8">
+<div class="relative h-[280px] rounded-3xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-capacity concrete batching plant with steel silos under bright blue sky, industrial architecture photography" src="../assets/images/aida-786ca3ce0d2f.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex gap-2 mb-3">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            Kafolat 15 oy
+                        </span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+                            EXW narx
+                        </span>
+</div>
+<h2 class="text-3xl font-extrabold text-white font-headline leading-tight">Beton zavodlari — HZS turkumi</h2>
+</div>
+</div>
+</section>
+<!-- Filter Chips -->
+<section class="px-6 mb-8 overflow-x-auto no-scrollbar flex items-center gap-2">
+<button class="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shrink-0">
+<span class="material-symbols-outlined text-lg">tune</span>
+                Unumdorlik
+            </button>
+<button class="bg-surface-container-high text-on-surface px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shrink-0">
+                Quvvat
+            </button>
+<button class="bg-surface-container-high text-on-surface px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shrink-0">
+                Narx
+            </button>
+<button class="bg-surface-container-high text-on-surface px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shrink-0">
+                Sort
+            </button>
+</section>
+<!-- Product Grid -->
+<section class="px-6 space-y-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(10,18,32,0.06)] flex flex-col">
+<div class="relative h-56">
+<img class="w-full h-full object-cover" data-alt="Close up of a HZS35 concrete mixing plant with control room and conveyors, professional industrial machinery photography" src="../assets/images/aida-bb170c442e10.png"/>
+<div class="absolute top-4 right-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1.5 rounded-xl text-[10px] font-bold uppercase tracking-wider font-label flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Omborda
+                        </span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-extrabold font-headline text-on-surface">HZS35</h3>
+<div class="text-right">
+<p class="text-secondary font-label font-bold text-xl">$25,500</p>
+<p class="text-[10px] text-outline font-label uppercase tracking-widest">Base price</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 mb-6">
+<div class="bg-surface-container-low p-3 rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">speed</span>
+<div>
+<p class="text-[10px] text-outline font-bold leading-none">Unumdorlik</p>
+<p class="font-label font-bold text-sm text-on-surface">35 m³/h</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">bolt</span>
+<div>
+<p class="text-[10px] text-outline font-bold leading-none">Quvvat</p>
+<p class="font-label font-bold text-sm text-on-surface">80 kW</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">timer</span>
+<div>
+<p class="text-[10px] text-outline font-bold leading-none">Sikl</p>
+<p class="font-label font-bold text-sm text-on-surface">72 s</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">straighten</span>
+<div>
+<p class="text-[10px] text-outline font-bold leading-none">O'lcham</p>
+<p class="font-label font-bold text-[10px] text-on-surface">18.4×9.8×17.6m</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-2xl font-bold font-body transition-transform active:scale-95 flex justify-center items-center gap-2">
+                        Batafsil
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Mid-grid CTA -->
+<div class="bg-[#0A1220] rounded-3xl p-6 flex items-center gap-6 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl"></div>
+<div class="shrink-0 relative">
+<div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary-container shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Professional engineer portrait wearing white safety helmet and suit, friendly expression, clean grey background" src="../assets/images/aida-84b159dfd355.png"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-tertiary rounded-full border-4 border-[#0A1220]"></div>
+</div>
+<div class="flex-1">
+<p class="text-cyan-400 font-label text-[10px] font-bold uppercase tracking-widest mb-1">Jonli muloqot</p>
+<h4 class="text-white font-headline font-bold text-lg mb-3 leading-tight">Zavod tanlashda qiynalyapsizmi?</h4>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition-transform active:scale-95 shadow-lg shadow-orange-500/20">
+<span class="material-symbols-outlined text-sm">support_agent</span>
+                        Mutaxassis bilan bog‘lanish
+                    </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(10,18,32,0.06)] flex flex-col border border-outline-variant/10">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-extrabold font-headline text-on-surface">HZS50</h3>
+<div class="text-right">
+<p class="text-secondary font-label font-bold text-xl">$42,000</p>
+<p class="text-[10px] text-outline font-label uppercase tracking-widest">Base price</p>
+</div>
+</div>
+<div class="flex gap-2 mb-6">
+<span class="bg-surface-container-low px-4 py-2 rounded-xl font-label font-bold text-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">speed</span>
+                            50 m³/h
+                        </span>
+<span class="bg-surface-container-low px-4 py-2 rounded-xl font-label font-bold text-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">bolt</span>
+                            110 kW
+                        </span>
+</div>
+<button class="w-full bg-surface-container text-on-primary-container py-4 rounded-2xl font-bold font-body flex justify-center items-center gap-2 transition-transform active:scale-95">
+                        Batafsil
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(10,18,32,0.06)] flex flex-col border border-outline-variant/10">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-extrabold font-headline text-on-surface">HZS90</h3>
+<div class="text-right">
+<p class="text-secondary font-label font-bold text-xl">$78,500</p>
+<p class="text-[10px] text-outline font-label uppercase tracking-widest">Base price</p>
+</div>
+</div>
+<div class="flex gap-2 mb-6">
+<span class="bg-surface-container-low px-4 py-2 rounded-xl font-label font-bold text-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">speed</span>
+                            90 m³/h
+                        </span>
+<span class="bg-surface-container-low px-4 py-2 rounded-xl font-label font-bold text-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">bolt</span>
+                            160 kW
+                        </span>
+</div>
+<button class="w-full bg-surface-container text-on-primary-container py-4 rounded-2xl font-bold font-body flex justify-center items-center gap-2 transition-transform active:scale-95">
+                        Batafsil
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto bg-[#0A1220] mt-20">
+<h2 class="text-white font-manrope font-black text-xl">VeriCore Global</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="text-slate-400 text-sm font-inter hover:text-amber-500 transition-colors" href="#">Loyihalar</a>
+<a class="text-slate-400 text-sm font-inter hover:text-amber-500 transition-colors" href="#">Katalog</a>
+<a class="text-slate-400 text-sm font-inter hover:text-amber-500 transition-colors" href="#">Servis markazi</a>
+<a class="text-slate-400 text-sm font-inter hover:text-amber-500 transition-colors" href="#">Maxfiylik</a>
+</div>
+<p class="font-inter text-slate-400 text-sm text-center">© 2024 VeriCore Global. Toshkent, O'zbekiston.</p>
+</footer>
+<!-- BottomNavBar (Mobile Shell) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800 shadow-[0_-8px_24px_rgba(10,18,32,0.08)] rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">send</span>
+<span class="text-[11px] font-bold font-inter uppercase tracking-wider">Telegram</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">chat</span>
+<span class="text-[11px] font-bold font-inter uppercase tracking-wider">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-300 rounded-xl px-4 py-1 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">call</span>
+<span class="text-[11px] font-bold font-inter uppercase tracking-wider">Qo'ng'iroq</span>
+</a>
+</nav>
+<!-- Sticky Bottom Chat Bar (Contextual) -->
+<div class="fixed bottom-20 left-6 right-6 z-40 md:hidden">
+<div class="bg-primary/95 backdrop-blur-md text-white px-6 py-4 rounded-3xl flex items-center justify-between shadow-2xl shadow-primary/30">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">forum</span>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Bepul konsultatsiya</p>
+<p class="text-sm font-bold font-headline">Mutaxassis javob beradi</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</body></html>
