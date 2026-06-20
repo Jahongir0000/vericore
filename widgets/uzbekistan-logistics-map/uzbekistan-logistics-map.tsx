@@ -6,11 +6,10 @@ import { useTranslations } from "next-intl";
 import { CentralAsiaMapSvg } from "./central-asia-map-svg";
 
 const COUNTRIES = [
-  { id: "kazakhstan",  color: "bg-sky-300/70",      label: "Qozog'iston" },
-  { id: "uzbekistan",  color: "bg-primary/35",       label: "O'zbekiston" },
-  { id: "kyrgyzstan",  color: "bg-emerald-300/70",   label: "Qirg'iziston" },
-  { id: "tajikistan",  color: "bg-violet-300/70",    label: "Tojikiston" },
-  { id: "afghanistan", color: "bg-amber-300/70",     label: "Afgʻoniston" },
+  { id: "kazakhstan", color: "bg-sky-300/70", label: "Qozog'iston" },
+  { id: "uzbekistan", color: "bg-primary/35", label: "O'zbekiston" },
+  { id: "kyrgyzstan", color: "bg-emerald-300/70", label: "Qirg'iziston" },
+  { id: "tajikistan", color: "bg-violet-300/70", label: "Tojikiston" },
 ];
 
 export function UzbekistanLogisticsMap() {

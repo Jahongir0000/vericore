@@ -120,14 +120,32 @@ const COUNTRIES = [
 const OFFICE = { x: 670, y: 488 };
 
 const COLORS: Record<string, { fill: string; active: string; stroke: string }> = {
-  kazakhstan:  { fill: "fill-sky-200/60",     active: "fill-sky-300/80",     stroke: "stroke-sky-400/40" },
-  uzbekistan:  { fill: "fill-primary/20",      active: "fill-primary/40",      stroke: "stroke-primary/35" },
-  kyrgyzstan:  { fill: "fill-emerald-200/60", active: "fill-emerald-300/80", stroke: "stroke-emerald-400/40" },
-  tajikistan:  { fill: "fill-violet-200/60",  active: "fill-violet-300/80",  stroke: "stroke-violet-400/40" },
-  afghanistan: { fill: "fill-amber-200/60",   active: "fill-amber-300/80",   stroke: "stroke-amber-400/40" },
+  kazakhstan: { fill: "fill-sky-200/60", active: "fill-sky-300/80", stroke: "stroke-sky-400/40" },
+  uzbekistan: { fill: "fill-primary/20", active: "fill-primary/40", stroke: "stroke-primary/35" },
+  kyrgyzstan: {
+    fill: "fill-emerald-200/60",
+    active: "fill-emerald-300/80",
+    stroke: "stroke-emerald-400/40",
+  },
+  tajikistan: {
+    fill: "fill-violet-200/60",
+    active: "fill-violet-300/80",
+    stroke: "stroke-violet-400/40",
+  },
+  afghanistan: {
+    fill: "fill-amber-200/60",
+    active: "fill-amber-300/80",
+    stroke: "stroke-amber-400/40",
+  },
 };
 
-export function CentralAsiaMapSvg({ ariaLabel, officeLabel }: { ariaLabel: string; officeLabel?: string }) {
+export function CentralAsiaMapSvg({
+  ariaLabel,
+  officeLabel,
+}: {
+  ariaLabel: string;
+  officeLabel?: string;
+}) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
@@ -153,7 +171,11 @@ export function CentralAsiaMapSvg({ ariaLabel, officeLabel }: { ariaLabel: strin
 
         {COUNTRIES.map((country) => {
           const isActive = active === country.id;
-          const c = COLORS[country.id];
+          const c = COLORS[country.id] ?? {
+            fill: "fill-primary/20",
+            active: "fill-primary/40",
+            stroke: "stroke-primary/35",
+          };
           return (
             <g
               key={country.id}
@@ -194,11 +216,13 @@ export function CentralAsiaMapSvg({ ariaLabel, officeLabel }: { ariaLabel: strin
       </svg>
 
       <figcaption className="font-label text-on-surface mt-3 min-h-[1.25rem] text-center text-sm font-bold">
-        {active && active !== "office"
-          ? COUNTRIES.find((c) => c.id === active)?.label
-          : active === "office"
-            ? (officeLabel ?? "Verikore")
-            : <span className="text-on-surface-variant font-normal">{ariaLabel}</span>}
+        {active && active !== "office" ? (
+          COUNTRIES.find((c) => c.id === active)?.label
+        ) : active === "office" ? (
+          (officeLabel ?? "Verikore")
+        ) : (
+          <span className="text-on-surface-variant font-normal">{ariaLabel}</span>
+        )}
       </figcaption>
     </figure>
   );
